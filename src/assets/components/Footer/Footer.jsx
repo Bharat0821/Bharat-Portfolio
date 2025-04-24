@@ -12,8 +12,8 @@ const Footer = () => {
         </div>
         <ul className='text-sm md:text-xl gap-4 '>
         <a href="mailto:swamibharat2110@gmail.com"> <li className='flex gap-2 items-center'><MdOutlineEmail size={20}/>swamibharat2110@gmail.com</li></a>
-         <a href="https://www.linkedin.com/in/bharat-swami-959471285/"><li className='flex gap-2  items-center'><CiLinkedin size={20}/>linklin.com/username</li></a> 
-            <li className='flex gap-2  items-center'><FaGithub size={20}/>github.com/username</li>
+         <a href="https://www.linkedin.com/in/bharat-swami-959471285/"><li className='flex gap-2  items-center'><CiLinkedin size={20}/>linklin.com/bharat-swami-959471285</li></a> 
+            <li className='flex gap-2  items-center'><FaGithub size={20}/>github.com/Bharat0821</li>
         </ul>
     </div>
   )
