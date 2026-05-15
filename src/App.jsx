@@ -1,26 +1,29 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './assets/components/Navbar/Navbar'
-import Home from './assets/components/Home/Home'
-import About from './assets/components/About/About'
-import Experience from './assets/components/Experience/Experience'
-import Projects from './assets/components/Projects/Projects'
-import Footer from './assets/components/Footer/Footer'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Cursor from "./components/Cursor";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  
   return (
     <>
-    <div className='bg-[#171d32] h-auto w-full overflow-hidden '>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Experience/>
-      <Projects/>
-      <Footer/>
-    </div>
+
+      <Cursor />
+      <Navbar />
+
+      <main className="bg-black text-white relative overflow-x-hidden w-screen">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
