@@ -25,7 +25,7 @@ const inputClass =
 
 const Contact = () => {
   const formRef = useRef();
-  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [status, setStatus] = useState("idle"); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,11 +54,9 @@ const Contact = () => {
       id="contact"
       className="relative min-h-screen bg-black text-white overflow-hidden px-6 md:px-16 py-32"
     >
-      {/* Background blobs */}
       <div className="absolute top-20 -left-20 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 -right-20 w-[500px] h-[500px] bg-pink-600/10 blur-[120px] rounded-full pointer-events-none" />
 
-      {/* Grid overlay */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{
@@ -70,7 +68,6 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* Section label */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -90,10 +87,8 @@ const Contact = () => {
           </h2>
         </motion.div>
 
-        {/* Split layout */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-          {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +100,6 @@ const Contact = () => {
               Let's create something visually stunning and meaningful together.
             </p>
 
-            {/* Info cards */}
             <div className="space-y-4 mb-12">
               {infoItems.map((item, index) => (
                 <motion.div
@@ -122,7 +116,6 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Socials */}
             <div>
               <p className="text-zinc-500 text-xs uppercase tracking-[4px] mb-5">Find me on</p>
               <div className="flex gap-3">
@@ -148,7 +141,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT — form */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -165,7 +157,6 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="relative z-10 grid gap-5"
               >
-                {/* EmailJS reads these by `name` attribute */}
                 <div className="grid sm:grid-cols-2 gap-5">
                   <input
                     type="text"
@@ -199,7 +190,6 @@ const Contact = () => {
                   className={`${inputClass} resize-none`}
                 />
 
-                {/* Submit button */}
                 <motion.button
                   type="submit"
                   disabled={status === "sending"}

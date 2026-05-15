@@ -4,16 +4,16 @@ import { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "AI Project",
+    title: "Face Attendance System",
     description:
-      "Modern AI application with immersive animations and real-time data visualization built with React and Three.js.",
-    tags: ["React", "Three.js", "GSAP", "AI"],
+      "Modern AI application with immersive animations and real-time data visualization built with React and NodeJS",
+    tags: ["React","NodeJs", "Tailwind"],
     color: "from-purple-500/20 to-violet-500/10",
     border: "hover:border-purple-500/40",
     glow: "hover:shadow-[0_0_40px_rgba(168,85,247,0.15)]",
     accent: "text-purple-400",
     number: "01",
-    link: "#",
+    link: "https://face-attendance-frontend-iiej.onrender.com/",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     glow: "hover:shadow-[0_0_40px_rgba(236,72,153,0.15)]",
     accent: "text-pink-400",
     number: "02",
-    link: "#",
+    link: "https://bharatportfolio-bharat0821s-projects.vercel.app/",
   },
   {
     id: 3,
@@ -43,16 +43,16 @@ const projects = [
   },
   {
     id: 4,
-    title: "3D Landing Page",
+    title: "A Online Quiz App",
     description:
-      "Immersive WebGL landing page with custom shaders, particle systems and scroll-driven 3D camera paths.",
+      "It is a quiz app built using React for the frontend and Node.js for the backend. It features a user-friendly interface, real-time quiz functionality, and a robust backend to manage quiz data and user interactions.",
     tags: ["Three.js", "WebGL", "GLSL", "GSAP"],
     color: "from-amber-500/20 to-orange-500/10",
     border: "hover:border-amber-500/40",
     glow: "hover:shadow-[0_0_40px_rgba(245,158,11,0.15)]",
     accent: "text-amber-400",
     number: "04",
-    link: "#",
+    link: "https://quizzhere2110.vercel.app/",
   },
 ];
 
