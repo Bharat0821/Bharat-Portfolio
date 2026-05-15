@@ -3,10 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-// ✅ Apni EmailJS details yahan daalo
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID  = "service_vqjmmgn";
+const EMAILJS_TEMPLATE_ID = "template_sajonzd";
+const EMAILJS_PUBLIC_KEY  = "YG0Ip9WXDqvzQiLUNAGUo";
 
 const socials = [
   { icon: <FaGithub />,    link: "https://github.com/",                                          label: "GitHub"    },
