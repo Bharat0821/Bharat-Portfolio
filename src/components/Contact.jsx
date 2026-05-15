@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 
 const EMAILJS_SERVICE_ID  = "service_vqjmmgn";
 const EMAILJS_TEMPLATE_ID = "template_sajonzd";
-const EMAILJS_PUBLIC_KEY  = "YG0Ip9WXDqvzQiLUNAGUo";
+const EMAILJS_PUBLIC_KEY  = "9PLmIkNsU0O_Ftqdq";
 
 const socials = [
   { icon: <FaGithub />,    link: "https://github.com/",                                          label: "GitHub"    },
